@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Impact, serif;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #000000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 26px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.hrLine{
+    border: 0;
+    height: 5px;
+    background: #095484;
+    background-image: linear-gradient(to right, #b478ec, #fa00e1, #fa21ff);
+}
+
+input{
+    padding:5px;
+    margin-top:10px;
+    transition: 0.3s;
+    background-color: white;
+    font-weight: bold;
+}
+input:hover{
+    background-color: black;
+    color:white;
+    transition: 0.3s;
+}
+
+button{
+    padding:5px;
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+    font-weight: bold;
+ }
+button:hover{
+    opacity:0.7;
+    transition: 0.3s;
+}

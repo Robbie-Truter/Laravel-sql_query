@@ -1,0 +1,3 @@
+<div>
+    {!! EuCookieConsent::getPopup() !!}
+</div>
